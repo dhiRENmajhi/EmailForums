@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("bg.png");
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    height: 80vh;
+    width: 80vh;
+}
+
+
+
+
+
+
+
+@keyframes wobbleleftright {
+    0%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(20px);
+    }
+}
+@keyframes wobbleletopdown {
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(20px);
+    }
+}
+@keyframes newspaperanim {
+    0%{
+        transform: scale(0.22) translateY(-100px) translateX(0px) rotateZ(0deg);
+    }
+    100%{
+        transform: scale(0.24) translateY(-80px) translateX(-50px) rotateZ(10deg);
+    }
+}
+@keyframes magnifyingglassanim {
+    0%{
+        transform: scale(0.35) translateY(-100px) translateX(-100px) rotateZ(45deg);
+    }
+    100%{
+        transform: scale(0.38) translateY(0px) translateX(80px) rotateZ(-25deg);
+    }
+}
+@keyframes mananim {
+    0%{
+        transform: scale(0.35) translateY(-100px) translateX(0px) rotateZ(0deg);
+    }
+    100%{
+        transform: scale(0.35) translateY(-100px) translateX(20px) rotateZ(0deg);
+    }
+}
+@keyframes handanim {
+    0%{
+        transform: scale(0.35) translateY(10px) translateX(0px) rotateZ(-20deg);
+    }
+    100%{
+        transform: scale(0.38) translateY(80px) translateX(-100px) rotateZ(0deg);
+    }
+}
+
+
+
+
+
+
+
+#news{
+    grid-column: 1/ span 2;
+    grid-row: 1/ span 2;
+    background-color: rgba(0, 173, 153, 0.428);
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(5px 10px 10px rgba(0, 68, 64, 0.613));
+    box-shadow: inset 0 0 15px #ffffff;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    animation: wobbleleftright 2s ease-in-out infinite alternate;
+}
+#news .title{
+    z-index: 2;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    transform: rotateZ(0deg) scale(1);
+    transition: all 0.4s ease;
+}
+#news .magnifying_glass{
+    position: absolute;
+    z-index: 3;
+    transform-origin: bottom;
+    margin-top: 40px;
+    transform: scale(0.35) translateY(-100px) translateX(-100px) rotateZ(45deg);
+    animation: magnifyingglassanim 2s ease-in-out infinite alternate;
+}
+#news .paper{
+    position: absolute;
+    transform-origin: bottom;
+    transform: scale(0.22) translateY(-100px) translateX(0px) rotateZ(0deg);
+    animation: newspaperanim 2s ease-in-out infinite alternate;
+}
+#news:hover .title{
+    color: #2a2e3a;
+    transform: rotateZ(-10deg) scale(2);
+}
+
+
+
+
+
+
+
+
+#podcast{
+    grid-column: 7/ span 3;
+    grid-row: 7/ span 3;
+    background-color: rgba(0, 115, 255, 0.428);
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(5px 10px 10px rgba(0, 31, 68, 0.613));
+    box-shadow: inset 0 0 20px #ffffff;
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-bottom: 5px;
+    border: 1px solid rgb(255, 255, 255);
+    animation: wobbleleftright 2.2s ease-in-out infinite alternate-reverse;
+}
+#podcast .title{
+    z-index: 2;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+    transform: rotateZ(0deg) scale(1);
+    transition: all 0.4s ease;
+}
+#podcast .hand{
+    position: absolute;
+    z-index: 3;
+    transform-origin: bottom;
+    margin-top: 40px;
+    transform: scale(0.35) translateY(0px) translateX(0px) rotateZ(-20deg);
+    animation: handanim 2.2s ease-in-out infinite alternate;
+}
+#podcast .man{
+    position: absolute;
+    z-index: 1;
+    transform-origin: bottom;
+    margin-top: 40px;
+    transform: scale(0.35) translateY(-100px) translateX(0px) rotateZ(0deg);
+    animation: mananim 2.2s ease-in-out infinite alternate;
+}
+#podcast:hover .title{
+    color: #2a2e3a;
+    transform: rotateZ(-10deg) scale(2);
+}
+
+
+
+
+
+
+
+
+
+
+#newsletter{
+    grid-column: 2/ span 6;
+    grid-row: 3/ span 4;
+    background: linear-gradient(0deg, rgb(255, 103, 48), rgb(255, 52, 52));
+    margin: 5px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 30px 20px 30px;
+}
+#newsletter .envelope{
+    background-color: rgba(255, 255, 255, 0.215);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgb(255, 255, 255);
+    filter: drop-shadow(5px 10px 10px rgba(68, 19, 0, 0.613));
+    border-radius: 100px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -130px;
+    transition: all 0.4s ease-in-out;
+}
+#newsletter .envelope img{
+    height: 70%;
+    transform: scale(1) rotateZ(10deg) translateY(0px);
+    transition: all 0.4s ease-in-out;
+}
+#newsletter .asktosubscribe{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+#newsletter .subscription_benefits{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: #2a2e3a;
+    text-align: center;
+}
+#newsletter .nospam{
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: #2a2e3a;
+    text-align: center;
+}
+#newsletter form{
+    display: flex;
+    width: 350px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    filter: drop-shadow(5px 10px 10px rgba(68, 19, 0, 0.413));
+    position: relative;
+    margin-left: -160px;
+    transition: all 0.4s ease-in-out;
+}
+#newsletter form #clientemail{
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: orangered;
+    width: 100%;
+    font-size: 1rem; 
+}
+#newsletter form #clientemail::placeholder{
+    color: orange;
+}
+#newsletter form #submitbtn{
+    padding: 8px 15px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    background-color: orange;
+    color: white;
+    transition: all 0.3s ease;
+}
+#newsletter form #submitbtn:hover{
+    background-color: red;
+}
+#newsletter:hover form{
+    margin-left: -200px;
+}
+#newsletter:hover .envelope{
+    margin-top: -150px;
+}
+#newsletter:hover .envelope img{
+    transform: scale(1.2) rotateZ(0deg) translateY(-20px);
+}
+
+
+
+
+
+
+
+#kylie{
+    grid-column: 8/ span 2;
+    grid-row: 2/ span 4;
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.354));
+    animation: wobbleletopdown 2s ease-in-out infinite alternate;
+}
+#kylie img{
+    height: 100%;
+}
+
+
+#jay_shetty{
+    grid-column: 1/ span 5;
+    grid-row: 8/ span 2;
+    background-color: white;
+    margin: 5px;
+    border-radius: 10px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    filter: drop-shadow(5px 10px 10px rgba(0, 0, 0, 0.354));
+    animation: wobbleletopdown 2.2s ease-in-out infinite alternate-reverse;
+}
+#jay_shetty img{
+    width: 100%;
+}

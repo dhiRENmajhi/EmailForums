@@ -1,0 +1,189 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+li{
+    list-style-type: none;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background-image: linear-gradient(190deg, #6b63ff, #6b63ff, white, white, white);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 90%;
+}
+header .logo{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+header .navigation_menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -20px;
+}
+header .navigation_item{
+    margin: 20px;
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
+    padding: 3px 14px;
+    border: 1px solid white;
+    border-radius: 40px;
+}
+header .active{
+    color: #6b63ff;
+    background-color: white;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+.container{
+    display: flex;
+    width: 1000px;
+    max-width: 90%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: fit-content;
+}
+.container .card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.32);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    padding: 40px;
+    box-shadow: 5px 10px 40px #423d9a67;
+    overflow: hidden;
+}
+.container .socials{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    flex-direction: column;
+    background-color: #6b63ff;
+    border-radius: 0 5px 20px 0;
+    padding: 10px 0;
+    position: relative;
+    margin-top: 300px;
+    transition: all 0.2s ease;
+}
+.container .socials svg{
+    margin: 20px 10px;
+    fill: white;
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s ease;
+}
+.container .socials:hover{
+    background-color: #2a2e3a;
+}
+.container .socials svg:hover{
+    fill: #6b63ff;
+}
+
+
+
+
+
+
+.getintouch{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.getintouch .title{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #6b63ff;
+}
+.getintouch .subtitle{
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #2a2e3a;
+}
+.getintouch .inp{
+    font-size: 1rem;
+    font-weight: lighter;
+    color: #6b63ff;
+    background-color: #e5e3ff;
+    outline: none;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    resize: none;
+    margin-top: 20px;
+}
+.getintouch .inp::placeholder{
+    color: #c4c1ff;
+}
+.getintouch #submitbtn{
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+    color: white;
+    background-color: #2a2e3a;
+    width: fit-content;
+    transition: all 0.2s ease;
+}
+.getintouch #submitbtn:hover{
+    background-color: #6b63ff;
+}
+
+
+.card .mydetails{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+}
+.mydetails .detaillogo{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    width: 100%;
+}
+.detaillogo .lg{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    border: 2px solid #6b63ff;
+}
+.mydetails .lg svg{
+    fill: #6b63ff;
+}
+.mydetails .detaillogo .detail{
+    color: #2a2e3a;
+    font-size: 1rem;
+}
+.mydetails .illustration{
+    height: 300px;
+    filter: drop-shadow(5px 10px 5px #423d9a67);
+}

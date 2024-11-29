@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+body{
+    display: flex;
+    height: 100vh;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(123, 108, 255);
+}
+.contact_forum{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.contact_forum img{
+    width: 40%;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    margin: -10px;
+}
+.letsTalk{
+    padding: 10px;
+    color: blue;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.enterYourProjectDetails{
+    color: #2a2e3a;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0 10px 10px 10px;
+}
+.input_feild{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px 15px 10px;
+}
+#name_feild{
+    color: blue;
+    width: 100%;
+}
+.Name1{
+    width: 35%;
+}
+#email_feild{
+    color: blue;
+    width: 100%;
+}
+.Email1{
+    width: 62%;
+}
+#description_feild{
+    color: blue;
+    width: 100%;
+}
+.input input{
+    margin-top: 10px;
+    padding: 5px 10px 5px 0;
+    font-size: 0.8rem;
+    font-weight: 500;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-block-end: 1px solid #2a2e3a;
+}
+.input input::placeholder{
+    color: #2a2e3a;
+}
+input:focus{
+    color: blue;
+    border-block-end: 1px solid blue;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+.check_part{
+    color: #2a2e3a;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0 10px 10px 10px;
+    color: #2a2e3a;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+.check_part a{
+    padding: 0 3px;
+    color: blue;
+}
+#check{
+    height: 20px;
+    width: 20px;
+    margin-right: 5px;
+    accent-color: blue;
+}
+
+.submit{
+    display: flex;
+    padding: 0 10px 10px 10px;
+}
+.submit{
+    display: flex;
+    padding: 0 10px 10px 10px;
+}
+.submit input{
+    width: 100%;
+    padding: 5px 20px;
+    border-radius: 2px;
+    border: 1px solid #2a2e3a;
+    background: transparent;
+    color: #2a2e3a;
+    font-size: 1rem;
+    font-weight: lighter;
+    transition: all 0.2s ease;
+}
+.submit input:hover{
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+}
+.email_phone{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    justify-content: space-between;
+}
+.email_phone p{
+    font-size: 0.8rem;
+    color: #2a2e3a;
+}

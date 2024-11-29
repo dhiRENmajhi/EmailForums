@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+a{
+    text-decoration: none;
+}
+.ask_email_forum01{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    padding: 100px;
+    background-color: rgb(255, 242, 223);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: -10px;
+}
+.forum_contents{
+    margin: 10px;
+}
+#_title{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: #2A2E3A;
+}
+#_info{
+    font-weight: lighter;
+    font-size: 0.8rem;
+    color: #2A2E3A;
+}
+#_privacy_note{
+    font-weight: lighter;
+    font-size: 0.7rem;
+    color: #2A2E3A;
+}
+#_privacy_note a{
+    color: #2A2E3A;
+    text-decoration: underline;
+}
+.input_area{
+    display: flex;
+    border: 1px solid #2A2E3A;
+}
+.input_area #_email{
+    display: flex;
+    padding: 10px;
+    border-radius: 0px;
+    border: none;
+    font-size: 1rem;
+    background: transparent;
+    color: #2A2E3A;
+    width: 100%;
+}
+.input_area #_email:focus{
+    outline: none;
+    color: #2A2E3A;
+}
+.input_area #_submit{
+    display: flex;
+    padding: 10px 20px;
+    background-color: #fff;
+    font-size: 1rem;
+    border: none;
+    color: white;
+    background-color: blueviolet;
+    transition: all 0.1s ease;
+}
+.input_area #_submit:hover{
+    background-color: orangered;
+}

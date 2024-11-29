@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("tic_tac_toe_loader_.gif");
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    display: flex;
+    max-width: 600px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(5px 10px 20px rgba(109, 0, 25, 0.686));
+    border-radius: 30px;
+    overflow: hidden;
+    padding: 30px;
+}
+.container img{
+    width: 20%;
+    margin-bottom: 20px;
+}
+.container .title{
+    font-size: 2rem;
+    font-weight: bolder;
+    color: #2a2e3a;
+}
+.container .subscription_benefit{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: lighter;
+    color: #2a2e3a;
+    margin-bottom: 20px;
+}
+.container form{
+    display: flex;
+    width: 80%;
+    overflow: hidden;
+    border-radius: 50px;
+}
+.container .email{
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: orangered;
+    font-weight: lighter;
+    padding: 15px 30px;
+    border: none;
+    background-color: white;
+}
+.container .email::placeholder{
+    color: orange;
+}
+.container .submit_btn{
+    outline: none;
+    font-size: 1rem;
+    font-weight: bolder;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    background-color: orangered;
+    transition: all 0.4s ease;
+}
+.container .submit_btn:hover{
+    background-color: red;
+}
+.container .promise{
+    font-size: 1rem;
+    text-align: center;
+    font-weight: lighter;
+    color: #2a2e3a;
+    margin-top: 20px;
+}
